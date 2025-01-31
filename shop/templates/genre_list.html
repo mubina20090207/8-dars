@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Genres</h1>
+  <ul>
+    {% for genre in genres %}
+      <li><a href="{% url 'genre_books' genre.slug %}">{{ genre.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

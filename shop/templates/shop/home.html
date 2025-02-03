@@ -29,7 +29,6 @@
             <p>Category: {{ product.category.name }}</p>
             <p>Department: {{ product.category.department.name }}</p>
             
-            <!-- Birinchi rasmni chiqarish -->
             {% if product.images.all %}
                 <img src="{{ product.images.all.0.image.url }}" alt="{{ product.name }}" style="width: 150px; height: 150px;">
             {% endif %}
